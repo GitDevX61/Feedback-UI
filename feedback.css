@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  background-color: lightblue;
+  /* min-height: 100vh - the element should occupy the web browser viewport height;
+  need it, so that vertical alignment works; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, .3);
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+  border-style: solid;
+  border-radius: 15px;
+  /* using % width makes it responsive */
+  width: 85%;
+  max-width: 400px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.heading {
+  margin: 5px;
+  font-size: 30px;
+}
+
+.ratings-container {
+  display: flex;
+  padding: 20px;
+}
+
+.rating {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+}
+
+.rating:hover,
+.rating.active {
+  background-color: lightcyan;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.rating img {
+  width: 40px;
+}
+
+.btn {
+  background-color: lightgreen;
+  font-size: 20px;
+  padding: 6px 10px;
+  border-style: solid;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
